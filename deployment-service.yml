@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devops-day-07-deployment
+spec:
+  selector:
+    matchLabels:
+      app: devops-day-07
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: devops-day-07
+    spec:
+      containers:
+        - name: devops-day-07
+          image: rupesh1997/devops-day-07:1.0.0
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8181
+
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: devops-day-07
+spec:
+  selector:
+    app: devops-day-07
+  ports:
+    - protocol: "TCP"
+      port: 8181
+      targetPort: 8181
+  type: LoadBalancer
