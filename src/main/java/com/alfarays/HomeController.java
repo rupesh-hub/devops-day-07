@@ -9,7 +9,7 @@ public class HomeController {
 
     @GetMapping("/")
     public String home(Model model) {
-        model.addAttribute("message", "Welcome to Spring Boot with Thymeleaf!");
+        model.addAttribute("message", "Welcome to Spring Boot with Thymeleaf! - DevOps Journey Day-07");
         return "home";
     }
 

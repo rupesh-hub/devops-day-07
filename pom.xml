@@ -41,7 +41,7 @@
     </dependencies>
 
     <build>
-        <finalName>devops-day-06-${version}</finalName>
+        <finalName>devops-day-07-${version}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
@@ -53,11 +53,11 @@
     <distributionManagement>
         <repository>
             <id>maven-releases</id>
-            <url>http://20.0.96.13:8081/repository/maven-releases/</url>
+            <url>http://20.77.24.210:8081/repository/maven-releases/</url>
         </repository>
         <snapshotRepository>
             <id>maven-snapshots</id>
-            <url>http://20.0.96.13:8081/repository/maven-snapshots/</url>
+            <url>http://20.77.24.210:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
